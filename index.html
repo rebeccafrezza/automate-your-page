@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<head>
+  <title>Rebecca's Notes</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div id="header">
+    <h1>Introduction to Programming Nanodegree</h1>
+    <h2>Rebecca Frezza</h2>
+  </div>
+  <div id="content">
+    <div class="container">
+      <div id="sidebar">
+        <ol>
+          <li><b><br><a href="#lesson-1">The Basics of the Web</a></b>
+            <ul>
+              <li><a href="#lesson-1-1">How the Web Works</a></li>
+              <li><a href="#lesson-1-2">HTML</a></li>
+              <li><a href="#lesson-1-3">Tags and Elements</a></li>
+              <li><a href="#lesson-1-4">Why Computers are Stupid</a></li>
+              <li><a href="#lesson-1-5">Inline vs Block Elements</a></li>
+            </ul>
+          </li>
+          <li class="TOC-lesson"><br><b><a href="#lesson-2">Creating a Structured Document </a></b>
+            <ul>
+              <li><a href="#lesson-2-1">Front End Programming</a></li>
+              <li><a href="#lesson-2-2">HTML's "tree-like" Structure</a></li>
+              <li><a href="#lesson-2-3">Indentations and Boxes</a></li>
+              <li><a href="#lesson-2-4">Text Editors</a></li>
+              <li><a href="#lesson-2-5">Layout of HTML</a></li>
+            </ul>
+          </li>
+          <li class="TOC-lesson"><br><b><a href="#lesson-3">Adding CSS Style to HTML</a></b>
+            <ul>
+              <li><a href="#lesson-3-1">Avoiding Repetition</a></li>
+              <li><a href="#lesson-3-2">Using CSS</a></li>
+            </ul>
+          </li>
+          <li class="TOC-lesson"><br><b><a href="#lesson-4">Introduction to Serious Programming</a></b>
+            <ul>
+              <li><a href="#lesson-4-1">Computers & Programming</a></li>
+              <li><a href="#lesson-4-2">High Level Languages & Python</a></li>
+              <li><a href="#lesson-4-3">Grammars & Backus-Naur Form</a></li>
+            </ul>
+            <li class="TOC-lesson"><br><b><a href="#lesson-5">Variables & Strings</a></b>
+              <ul>
+                <li><a href="#lesson-5-1">What Are Variables?</a></li>
+                <li><a href="#lesson-5-2">How To Use Strings</a></li>
+                <li><a href="#lesson-5-3">Using The Find Method</a></li>
+              </ul>
+            </li>
+            <li class="TOC-lesson"><br><b><a href="#lesson-6">Input-Function-Output</a></b>
+              <ul>
+                <li><a href="#lesson-6-1">What Is A Function?</a></li>
+              </ul>
+            </li>
+            <li class="TOC-lesson"><b><br><a href="#lesson-7">Decisions & Repetition</a></b>
+              <ul>
+                <li><a href="#lesson-7-1">Comparison Operators</a></li>
+                <li><a href="#lesson-7-2">The If Statement</a></li>
+                <li><a href="#lesson-7-3">The Or Operator</a></li>
+                <li><a href="#lesson-7-4">Using Loops</a></li>
+              </ul>
+            </li>
+            <li class="TOC-lesson"><b><br><a href="#lesson-8">Structured Data</a></b>
+              <ul>
+                <li><a href="#lesson-8-1">What Are Lists?</a></li>
+                <li><a href="#lesson-8-2">List Operations</a></li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div id="main-content">
+          <div class="lesson">
+            <br>
+            <h2 id="lesson-1">Lesson 1: The Basics of the Web and HTML</h2>
+            <br>
+            <div class="concept" id="lesson-1-1">
+              <div class="concept-title">
+                How The Web Works
+              </div>
+              <div class="concept-description">
+                <p>The web is a network of computers that communicate with each other. When you visit a web page, like www.google.com, your computer sends an HTTP request to a server. The server locates the appropriate HTML document and gives it to your web browser. The browser interprets the page and displays the page to your screen.</p>
+                <br>
+                <ul>
+                  <li>Invented in the 1990s</li>
+                  <li>The world's largest computer network</li>
+                  <li>Now has 30 billion pages</li>
+                </ul>
+              </div>
+            </div>
+            <div class="concept" id="lesson-1-2">
+              <div class="concept-title">
+                HTML
+              </div>
+              <div class="concept-description">
+                <p style="text-align: left;">HTML stands for Hyper Text Markup Language</p>
+                <br>
+                <ul>
+                  <li>A web page is a text document written in HTML</li>
+                  <li>HTML is the main document on the web and makes up the heart of the web</li>
+                  <li>HTML consists of:</li>
+                </ul>
+                <ul>
+                  <li style="list-style-type:none">
+                    <ul>
+                      <li>Text content- what you see</li>
+                      <li>Markup- what it looks like</li>
+                      <li>References to other documents, images, and video</li>
+                      <li>Links to other pages</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="concept" id="lesson-1-3">
+              <div class="concept-title">
+                Tags and Elements
+              </div>
+              <div class="concept-description">
+                <p>HTML documents are made of HTML elements. When writing HTML, we tell browsers the type of each element by using HTML tags.</p>
+                <br>
+                <ul>
+                  <li>HTML Markup: &lt;name&gt; contents &lt;/name&gt;</li>
+                  <li style="list-style-type:none">
+                    <ul>
+                      <li>&lt;name&gt; is called the <strong>opening</strong> tag</li>
+                      <li>&lt;/name&gt; is called the <strong>closing</strong> tag</li>
+                      <li>The <strong>element</strong> refers to what is in between the tags.</li>
+                    </ul>
+                  </li>
+                  <li>Example elements:</li>
+                  <li style="list-style-type:none">
+                    <ul>
+                      <li>&lt;b&gt;<strong> Creates bold text.</strong>&lt;/b&gt;</li>
+                      <li>&lt;em&gt; <em>Creates emphasis or italicized text.</em> &lt;/em&gt;</li>
+                      <li>&lt;br&gt;  Creates a break (blank line).</li>
+                      <li style="list-style-type:none">
+                        <ul>
+                          <li>This is a void tag because it does not have a closing tag.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>HTML grouping tags:</li>
+                  <li style="list-style-type:none">
+                    <ul>
+                      <li>&lt;span&gt;  Group in-line elements, no visual change</li>
+                      <li>&lt;div&gt;  Group block elements to be formatted with CSS</li>
+                      <li style="list-style-type:none">
+                        <ul>
+                          <li>It is good practice to use &lt;div&gt; with each "imaginary box"</li>
+                        </ul>
+                      </li>
+                    </ul>
+                    
+                    <li>HTML attributes are specified in the opening tag and provide additional information about the element</li>
+                    <li style="list-style-type:none">
+                      <ul>
+                        <li>&lt;tag attr="value"&gt;contents&lt;/tag&gt;</li>
+                        <li>&lt;a href="www.udacity.com"&gt;Udacity&lt;/a&gt;</li>
+                        <li>&lt;img src="url" alt="text"&gt;</li>
+                        <li style="list-style-type:none">
+                          <ul>
+                            <li>alt: Specifies alternate text. This is useful for broken requests and visually impaired users.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="concept" id="lesson-1-4">
+                <div class="concept-title">
+                  Why Computers are Stupid
+                </div>
+                <div class="concept-description">
+                  <p>
+                    Computers are often referred to as "stupid," because they can only do what they are programmed to do. They are often very unforgiving of small mistakes made by a programmer. Programmers use code to write in a language the computer can understand. This allows the computer to execute instructions written by the programmer. No programmer writes perfect code the first time, this is where "debugging" comes into play. Debugging is the process of finding and correcting problems in the code.
+                  </p>
+                </div>
+              </div>
+              <div class="concept" id="lesson-1-5">
+                <div class="concept-title">
+                  Inline vs Block Elements
+                </div>
+                <div class="concept-description">
+                  <p>
+                    <p>Inline element examples:</p>
+                    <ul>
+                      <li>&lt;a&gt; Defines a hyperlink</li>
+                      <li>&lt;br&gt;Inserts a single line break</li>
+                      <li>&lt;img&gt;Defines an image</li>
+                      <li>&lt;strong&gt; Defines important text</li>
+                    </ul>
+                    <br>
+                    <p>Block elements form an "invisible box" around the content. Example:</p>
+                    <ul>
+                      <li>&lt;p&gt; paragraph &lt;/p&gt;</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson">
+                <br>
+                <h2 id="lesson-2">Lesson 2: Creating a Structured Document with HTML</h2>
+                <br>
+                <div class="concept" id="lesson-2-1">
+                  <div class="concept-title">
+                    Front End Programming
+                  </div>
+                  <div class="concept-description">
+                    <p>Front end programming is the visual aspect of a website. Some front end languages are HTML, CSS, and Javascript.&nbsp;</p>
+                    <br>
+                    <p>A website is much like a house:</p>
+                    <ul>
+                      <li><strong>HTML</strong>&nbsp;controls the&nbsp;<strong>structure</strong>, like where walls are placed.</li>
+                      <li><strong>CSS</strong>&nbsp;controls the&nbsp;<strong>style</strong>, colors, etc.</li>
+                      <li><strong>Javascript&nbsp;</strong>controls the interactive components, like a garage door.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="concept" id="lesson-2-2">
+                  <div class="concept-title">
+                    The "tree-like structure" of HTML
+                  </div>
+                  <div class="concept-description">
+                    <p>Document Object Model (DOM): The "tree-like structure" of HTML</p>
+                    <br>
+                    <p>The "tree-like structure" comes from the fact that HTML elements can have other elements inside of them. In a browser, this structure shows up as a series of nested boxes. There are boxes inside of boxes inside of boxes, and so on...</p>
+                  </div>
+                </div>
+                <div class="concept" id="lesson-2-3">
+                  <div class="concept-title">
+                    The relationship between indented HTML and boxes
+                  </div>
+                  <div class="concept-description">
+                    <p>
+                      When you read an HTML document as
+                      <em>text</em>, you see a wave of
+                      changing indentations going up and down the left side
+                      of the document. The more indented an element is, the
+                      more deeply nested its corresponding "box" is.
+                    </p>
+                  </div>
+                </div>
+                <div class="concept" id="lesson-2-4">
+                  <div class="concept-title">
+                    Text Editors (for programming)
+                  </div>
+                  <div class="concept-description">
+                    When writing code, programmers use special text editors
+                    (like Sublime Text for example). These editors make the
+                    programmer's life easier. For example, some text editors
+                    will automatically generate a closing HTML tag when you
+                    write an opening tag.
+                  </div>
+                </div>
+                <div class="concept" id="lesson-2-5">
+                  <div class="concept-title">
+                    Layout of an HTML Document
+                  </div>
+                  <div class="concept-description">
+                    <span class="code">&lt;!DOCTYPE HTML&gt;&nbsp;&nbsp;&nbsp;&nbsp; (this declares the document type)
+                      <br>
+                      <span style="padding-left: 30px;">&lt;head&gt;&nbsp;</span>
+                      <span style="padding-left: 60px;">&lt;title&gt; Title! &lt;/title&gt;&nbsp;&nbsp;&nbsp; (this specifies the title of the document)</span>
+                      <span style="padding-left: 30px;">&lt;/head&gt;</span>
+                      <span style="padding-left: 30px;">&lt;body&gt; &nbsp;</span>
+                      <span style="padding-left: 60px;">&lt;b&gt; content &lt;/b&gt;</span>
+                      <span style="padding-left: 30px;">&lt;/body&gt;</span>
+                      <span>&lt;/html&gt;</span>
+                      <br>
+                    </span>
+                    <p>Between the &lt;head&gt; tags, you specify the meta-data, Javascript, and CSS involved.</p>
+                    <p>Between the &lt;body&gt; tags, you specify the body/content of the page.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson">
+                <br>
+                <h2 id="lesson-3">Lesson 3: Adding CSS Style to HTML Structure</h2>
+                <br>
+                <div class="concept" id="lesson-3-1">
+                  <div class="concept-title">
+                    Avoiding Repetition
+                  </div>
+                  <div class="concept-description">
+                    <div class="concept-description">
+                      <p>Avoiding repetition is important for a variety of reasons.</p>
+                      <br>
+                      <p><strong>Avoiding Errors:</strong>&nbsp;When programmers&nbsp;<em>don't</em>&nbsp;avoid repetition, they will often have to do the same thing over and over. This may mean copy and pasting certain style attributes into many HTML elements or rewriting the same code (sometimes with minor differences) many times. This can lead to errors when the programmer decides to make a change to something. If they don't dilligently make that same change everywhere the repeated code appears, problems will arise.</p>
+                      <br>
+                      <p><strong>Consistency:</strong>&nbsp;Easily create pages of the same style without manually doing each page. Assign similar "boxes" with&nbsp;the same&nbsp;<span class="code">class</span>&nbsp;and then specify the style for that class in only one place! By avoiding repetion, it's very easy to make style changes.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="concept" id="lesson-3-2">
+                  <div class="concept-title">
+                    CSS
+                  </div>
+                  <div class="concept-description">
+                    <p>
+                      CSS stands for Cascading Style Sheets. This uses the idea of inheritance and gives programmers a way to control the style of related HTML elements. This is done by giving similar HTML elements the same <span class="code">class</span> name and then specifying the style that should apply to that class.
+                    </p>
+                    <br>
+                    <p>There are three methods of adding CSS to your HTML:</p>
+                    <ul>
+                      <li>Write CSS in the&nbsp;<code>&lt;head&gt;</code>&nbsp;of your HTML. Easiest method for a small project.</li>
+                      <li>Link your HTML to a separate CSS file. Requires an additional step but keeps you organized.</li>
+                      <li>Write your style&nbsp;<em>inline</em>&nbsp;with your HTML. This tends to lead to repeated code and more errors.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson">
+                <br>
+                <h2 id="lesson-4">Lesson 4: Introduction to Serious Programming</h2>
+                <br>
+                <div class="concept" id="lesson-4-1">
+                  <div class="concept-title">
+                    Computers & Programming
+                  </div>
+                  <div class="concept-description">
+                    <div class="concept-description">
+                      <p>A computer is a machine. Unlike other machines that have a specific purpose (like a toaster), computers have many abilities. Programming is the act of giving a computer precise directions so that it will perform what we need it to do. An advantage of programming a computer is the speed at which it can run computations. By writing programs, we can make the most of a computer's ability.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="concept" id="lesson-4-2">
+                  <div class="concept-title">
+                    High Level Languages & Python
+                  </div>
+                  <div class="concept-description">
+                    <p>Python is a high level programming language. One of the advantages of a high level language is the relative ease of use. Python uses a program called an interpreter. The interpreter converts the code into a language that the computer can understand. The interpreter also allows for portability of code across multiple systems. </p>
+                    <br>
+                  </div>
+                </div>
+                <div class="concept" id="lesson-4-3">
+                  <div class="concept-title">
+                    Grammars & Backus-Naur Form 
+                  </div>
+                  <div class="concept-description">
+                    <p>The purpose of&nbsp;Backus-Naur Form&nbsp;is to describe a language simply and concisely. This is the example of an idea used in computer science.</p>
+                    <p>&nbsp;</p>
+                    <p>We can break down the langage into two primary types:</p>
+                    <ol>
+                      <li>Non-terminals (something that isn't finished)</li>
+                      <li>Terminals (something that is completed)</li>
+                    </ol>
+                    <p>&nbsp;</p>
+                    <p>Non-terminals can be paired with terminals or other non-terminals.&nbsp; Non-terminal rules dictate which other non-terminals it can be "linked" with.&nbsp;</p>
+                    <br>
+                  </div>
+                </div>
+              </div> 
+              <div class="lesson">
+                <br>
+                <h2 id="lesson-5">Lesson 5: Variables & Strings</h2>
+                <br>
+                <div class="concept" id="lesson-5-1">
+                  <div class="concept-title">
+                    The Variable
+                  </div>
+                  <div class="concept-description">
+                    <div class="concept-description">
+                      <p>Variables&nbsp;make our code easier to read and more expressive. A&nbsp;variable&nbsp;is the name for a location in a computer's memory. Using a variable&nbsp;name such as "miles_per_hour" in place of the number "60" increases the readibility of your code. A&nbsp;variable&nbsp;can be&nbsp;given a value of many data types.</p>
+                      <p>In the example: "miles_per_hour = 60"</p>
+                      <ul>
+                        <li>Variable is "miles_per_hour"</li>
+                        <li>Value is "60</li>
+                        <li>Assignment operator "=" gives the variable a value.</li>
+                        <li>
+                          <ul>
+                            <li>Should not be confused with the&nbsp;equals&nbsp;sign in arithmetic.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="concept" id="lesson-5-2">
+                  <div class="concept-title">
+                    The String
+                  </div>
+                  <div class="concept-description">
+                    <p>A&nbsp;string&nbsp;is a sequence of characters. In Python, a&nbsp;string can be written between single or double quotes.</p>
+                    <p>One advantage of strings over numbers is the feature of indexing. Indexing allows us to use square&nbsp;brackets&nbsp;"[ ]" to select a character in a string. If there is a variable that contains the string "udacity" and your code includes the line "print udacity[3]" it will print the fourth character "c".</p>
+                    <p>You can also select a substring, which is a subsequence&nbsp;of characters within the string. This is done by placing a colon between two index positions, "udacity[0:4]". If the string "udacity" has the value 123456, the code would print "123."</p>
+                    <br>
+                  </div>
+                </div>
+                <div class="concept" id="lesson-5-3">
+                  <div class="concept-title">
+                    The Find
+                  </div>
+                  <div class="concept-description">
+                    <p>The Find method allows us to locate substrings within a string.  To use Find, you provide the method two strings. It will return the first index of the "target string". If the string is not found, it returns -1. You can pass a number in the second parameter of Find, this causes Find to begin searching at that index.</p>
+                    <br>
+                  </div>
+                </div>
+              </div> 
+              <div class="lesson">
+                <br>
+                <h2 id="lesson-6">Lesson 6: Input-Function-Output</h2>
+                <br>
+                <div class="concept" id="lesson-6-1">
+                  <div class="concept-title">
+                    The Function
+                  </div>
+                  <div class="concept-description">
+                    <div class="concept-description">
+                      <p>A function is a set of instructions defined by the programmer and is an important part of a program. It allows for readability and reduces redundancy in your code. When defining a function, we list arguments that can be passed to the function. The arguments are like variables used only inside of the function. To use a function, you only need the name and the number and type of arguments you can safely pass. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson">
+                <br>
+                <h2 id="lesson-7">Lesson 7: Decisions & Repetition</h2>
+                <br>
+                <div class="concept" id="lesson-7-1">
+                  <div class="concept-title">
+                    Comparisons
+                  </div>
+                  <div class="concept-description">
+                    <div class="concept-description">
+                      <p>Comparison operators in Python are used to compare numbers. The comparison will return a Boolean value of True or False. Some examples of comparison operators are: equal to, is not, less than, and more than.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="concept" id="lesson-7-2">
+                  <div class="concept-title">
+                    The If
+                  </div>
+                  <div class="concept-description">
+                    <p>The if statement tests a given expression to decide if it is True or False. If True, the code inside the if statement will run. If False, the program will skip over the rest of the if statement and advance to the next code.</p>
+                  </div>
+                </div>
+                <div class="concept" id="lesson-7-3">
+                  <div class="concept-title">
+                    The Or
+                  </div>
+                  <div class="concept-description">
+                    <p>The Or Operator in Python allows us to test expressions to see if one evaluates to True. The expression that satisfies the condition is not returned, but it allows the rest of the code to run. If none of the conditions are true, they are skipped.</p>
+                    <br>
+                  </div>
+                </div>
+                <div class="concept" id="lesson-7-4">
+                  <div class="concept-title">
+                    The Loop
+                  </div>
+                  <div class="concept-description">
+                    <p>Loops allow us to write a block of code once, but run it multiple times depending on a condition. An example is the While Loop. The While Loops executes the block of code as long as the test expression resolved to True. Once the expression becomes False, the loop is ended and advances to the next code.</p>
+                    <br>
+                  </div>
+                </div>
+              </div> 
+              <div class="lesson">
+                <br>
+                <h2 id="lesson-8">Lesson 8: Structured Data</h2>
+                <br>
+                <div class="concept" id="lesson-8-1">
+                  <div class="concept-title">
+                    Lists
+                  </div>
+                  <div class="concept-description">
+                    <div class="concept-description">
+                      <p>Unlike a string, which is a sequence of characters, a list can be a sequence of any data type (Even a list of lists!). Just like a string, we have functions that allow us to select a subsequence of the list. Another function we can perform on a list is Mutation. This allows us to modify the contents of the list even after it is written to memory.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="concept" id="lesson-8-2">
+                  <div class="concept-title">
+                    List Operations
+                  </div>
+                  <div class="concept-description">
+                    <p>There are many operations we can perform on a list. For example, we can "append" a list, which simply adds an element to the end of the existing list. The "+" can be used to tack a list on to the end of another list without the need for nesting. The "len" feature can be used to return the number of elements within the specified list. Additionally, we can also use a For Loop to iterate through the list and execute a block of code on the individual element. </p>
+                  </div>
+                </div>
+              </div> 
+            </div> 
+          </div>
+        </div>
+      </body>
+    </html>             
